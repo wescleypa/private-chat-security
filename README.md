@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Private Chat Security
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O **Private Chat Security** é uma aplicação de chat que prioriza a segurança e a privacidade das conversas entre os usuários. Desenvolvida com React, esta aplicação oferece um ambiente seguro para comunicação em tempo real.
 
-## Available Scripts
+## Funcionalidades
 
-In the project directory, you can run:
+- **Comunicação em tempo real:** permite que os usuários conversem instantaneamente.
+- **Criptografia de ponta a ponta:** garante que apenas os participantes da conversa possam ler as mensagens.
+- **Autenticação segura:** protege o acesso à aplicação e às conversas.
 
-### `npm start`
+## Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React:** biblioteca JavaScript para construção da interface de usuário.
+- **Node.js:** ambiente de execução para o servidor.
+- **Socket.io:** biblioteca para comunicação em tempo real.
+- **bcrypt:** biblioteca para hashing de senhas.
+- **jsonwebtoken:** biblioteca para autenticação baseada em tokens.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Pré-requisitos
 
-### `npm test`
+- **Node.js** versão 14 ou superior.
+- **npm** versão 6 ou superior.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Instalação
 
-### `npm run build`
+1. Clone o repositório:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/wescleypa/private-chat-security.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Navegue até o diretório do projeto:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+bash
+Copiar
+Editar
+cd private-chat-security
+Instale as dependências:
 
-### `npm run eject`
+bash
+Copiar
+Editar
+npm install
+Uso
+Inicie o servidor:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+bash
+Copiar
+Editar
+npm start
+Acesse a aplicação no navegador:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+arduino
+Copiar
+Editar
+http://localhost:3000
+Estrutura do Projeto
+public/: contém os arquivos públicos da aplicação.
+src/: contém o código-fonte da aplicação React.
+package.json: arquivo de configuração do npm com as dependências e scripts.
+Contribuição
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Licença
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para mais informações.
