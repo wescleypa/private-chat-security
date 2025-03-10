@@ -1,64 +1,65 @@
-# Private Chat Security
+# Projeto de Backend com Node.js, MySQL2 e JWT
 
-O **Private Chat Security** é uma aplicação de chat que prioriza a segurança e a privacidade das conversas entre os usuários. Desenvolvida com React, esta aplicação oferece um ambiente seguro para comunicação em tempo real.
+Este projeto é uma API RESTful desenvolvida com Node.js e Express, utilizando MySQL como banco de dados e JSON Web Token (JWT) para autenticação. A API permite operações CRUD (Create, Read, Update, Delete) em uma tabela de usuários, com rotas protegidas por autenticação JWT.
 
-## Funcionalidades
+## Índice
 
-- **Comunicação em tempo real:** permite que os usuários conversem instantaneamente.
-- **Criptografia de ponta a ponta:** garante que apenas os participantes da conversa possam ler as mensagens.
-- **Autenticação segura:** protege o acesso à aplicação e às conversas.
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Instalação](#instalação)
+- [Configuração do Banco de Dados](#configuração-do-banco-de-dados)
+- [Uso](#uso)
+- [Autenticação](#autenticação)
+- [Rotas da API](#rotas-da-api)
+- [Contribuição](#contribuição)
+- [Licença](#licença)
+- [Contato](#contato)
 
 ## Tecnologias Utilizadas
 
-- **React:** biblioteca JavaScript para construção da interface de usuário.
-- **Node.js:** ambiente de execução para o servidor.
-- **Socket.io:** biblioteca para comunicação em tempo real.
-- **bcrypt:** biblioteca para hashing de senhas.
-- **jsonwebtoken:** biblioteca para autenticação baseada em tokens.
-
-## Pré-requisitos
-
-- **Node.js** versão 14 ou superior.
-- **npm** versão 6 ou superior.
+- [Node.js](https://nodejs.org/)
+- [Express](https://expressjs.com/)
+- [MySQL2](https://www.npmjs.com/package/mysql2)
+- [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
+- [dotenv](https://www.npmjs.com/package/dotenv)
 
 ## Instalação
 
-1. Clone o repositório:
+1. Clone este repositório:
 
    ```bash
-   git clone https://github.com/wescleypa/private-chat-security.git
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
 
-Navegue até o diretório do projeto:
+Acesse o diretório do projeto:
 
 bash
 Copiar
 Editar
-cd private-chat-security
+cd nome-do-repositorio
 Instale as dependências:
 
 bash
 Copiar
 Editar
 npm install
-Uso
+Configure as variáveis de ambiente:
+
+Renomeie o arquivo .env.example para .env e preencha as informações necessárias, como as credenciais do banco de dados e a chave secreta para o JWT.
 Inicie o servidor:
 
 bash
 Copiar
 Editar
 npm start
-Acesse a aplicação no navegador:
+Configuração do Banco de Dados
+Certifique-se de que o MySQL está instalado e em execução em sua máquina.
 
-arduino
+Crie um banco de dados para o projeto:
+
+sql
 Copiar
 Editar
-http://localhost:3000
-Estrutura do Projeto
-public/: contém os arquivos públicos da aplicação.
-src/: contém o código-fonte da aplicação React.
-package.json: arquivo de configuração do npm com as dependências e scripts.
-Contribuição
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
+CREATE DATABASE nome_do_banco_de_dados;
+Implemente as migrações ou scripts SQL fornecidos no diretório database para criar as tabelas necessárias.
 
-Licença
-Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para mais informações.
+Uso
+Após iniciar o servidor, a API estará disponível em http://localhost:3000. Você pode utilizar ferramentas como Postman ou Insomnia para testar as rotas da API.
